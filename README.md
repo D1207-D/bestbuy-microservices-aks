@@ -25,16 +25,14 @@ The application comprises the following services:
 
 | Service              | Description                                                       | GitHub Repo         |
 |----------------------|-------------------------------------------------------------------|---------------------|
-| `store-front`        | Customer-facing web app for placing orders (Vue.js).             | Link                |
-| `store-admin`        | Employee-facing app for order management (Vue.js).               |                     |
-| `order-service`      | Backend service for order placement (JavaScript).                |                     |
-| `product-service`    | Handles CRUD operations on products (Rust).                      |                     |
-| `makeline-service`   | Processes orders from the queue and completes them (Golang).     |                     |
-| `ai-service`         | AI-powered service for product descriptions and images (Python). |                     |
-| `rabbitmq`           | Message broker for managing order queues.                        |                     |
-| `mongodb`            | NoSQL database for data persistence.                             |                     |
-| `virtual-customer`   | Simulates customer order creation (Rust).                        |                     |
-| `virtual-worker`     | Simulates employee order processing (Rust).                      |                     |
+| `store-front`        | Customer-facing web app for placing orders (Vue.js).             |https://github.com/D1207-D/final-best-buy-store-front               |
+| `store-admin`        | Employee-facing app for order management (Vue.js).               |https://github.com/D1207-D/final-best-buy-store-admin                    |
+| `order-service`      | Backend service for order placement (JavaScript).                |https://github.com/D1207-D/final-best-buy-order-service                     |
+| `product-service`    | Handles CRUD operations on products (Rust).                      |https://github.com/D1207-D/final-best-buy-product-service                     |
+| `makeline-service`   | Processes orders from the queue and completes them (Golang).     |https://github.com/D1207-D/final-best-buy-makeline-service                     |
+| `ai-service`         | AI-powered service for product descriptions and images (Python). |https://github.com/D1207-D/final-best-buy-ai-service                     |
+| `virtual-customer`   | Simulates customer order creation (Rust).                        |https://github.com/D1207-D/final-best-buy-virtual-customer                     |
+| `virtual-worker`     | Simulates employee order processing (Rust).                      |https://github.com/D1207-D/final-best-buy-virtual-worker                     |
 
 
 ### **Service Descriptions**
