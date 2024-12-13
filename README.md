@@ -55,6 +55,65 @@ The application comprises the following services:
 
 ![Architecture Diagram](Architecture.png)
 
+## **Microservices and Docker Images**
+
+## Testing Docker
+### **Step 1: Build Docker Images for All Repositories**
+
+```bash
+docker build -t bestbuy-ai-service:latest .  
+docker build -t bestbuy-makeline-service:latest .  
+docker build -t bestbuy-product-service:latest .  
+docker build -t bestbuy-store-front:latest .  
+docker build -t bestbuy-virtual-worker:latest .  
+docker build -t bestbuy-order-service:latest .  
+docker build -t bestbuy-store-admin:latest .  
+docker build -t bestbuy-virtual-customer:latest .
+```
+```bash
+
+Step 2: Tag Docker Images
+docker tag best-buy-ai-service:latest daniyal1207/best-buy-ai-service:latest  
+docker tag best-buy-makeline-service:latest daniyal1207/best-buy-makeline-service:latest  
+docker tag best-buy-product-service:latest daniyal1207/best-buy-product-service:latest  
+docker tag best-buy-store-front:latest daniyal1207/best-buy-store-front:latest  
+docker tag best-buy-virtual-worker:latest daniyal1207/best-buy-virtual-worker:latest  
+docker tag best-buy-order-service:latest daniyal1207/best-buy-order-service:latest  
+docker tag best-buy-store-admin:latest daniyal1207/best-buy-store-admin:latest  
+docker tag best-buy-virtual-customer:latest daniyal1207/best-buy-virtual-customer:latest
+
+```
+```bash
+
+## Step 3: Push Docker Images to the Repository
+docker push daniyal1207/best-buy-ai-service:latest  
+docker push daniyal1207/best-buy-makeline-service:latest  
+docker push daniyal1207/best-buy-product-service:latest  
+docker push daniyal1207/best-buy-store-front:latest  
+docker push daniyal1207/best-buy-virtual-worker:latest  
+docker push daniyal1207/best-buy-order-service:latest  
+docker push daniyal1207/best-buy-store-admin:latest  
+docker push daniyal1207/best-buy-virtual-customer:latest  
+
+```
+
+
+| **Service**          | **Docker Image Link**      | 
+|----------------------|----------------------------|
+| **Store-Front**      | https://hub.docker.com/r/daniyal1207/best-buy-store-front/tags | 
+| **Order-Service**    |  https://hub.docker.com/r/daniyal1207/best-buy-order-service/tags| 
+| **Product-Service**  |  https://hub.docker.com/r/daniyal1207/best-buy-product-service/tags| 
+| **Makeline-Service** | https://hub.docker.com/r/daniyal1207/best-buy-makeline-service/tags |
+| **Store-admin**      | https://hub.docker.com/r/daniyal1207/best-buy-store-admin/tags | 
+| **AI-Service**       | https://hub.docker.com/r/daniyal1207/best-buy-ai-service/tags |
+| **Virtual-Customer** | https://hub.docker.com/r/daniyal1207/best-buy-virtual-customer/tags | 
+| **Virtual-Worker**   | https://hub.docker.com/r/daniyal1207/best-buy-virtual-worker/tags | 
+
+---
+
+
+
+
 ## Step 2: Create an Azure Kubernetes Cluster (AKS)
 
 ### Steps to Set Up AKS:
@@ -175,81 +234,6 @@ The application comprises the following services:
   use orderdb
   db.orders.find()
   ```
-
----
-
-## **Microservices and Docker Images**
-
-## Testing
-### **Step 1: Build Docker Images for All Repositories**
-
-```bash
-docker build -t bestbuy-ai-service:latest .  
-docker build -t bestbuy-makeline-service:latest .  
-docker build -t bestbuy-product-service:latest .  
-docker build -t bestbuy-store-front:latest .  
-docker build -t bestbuy-virtual-worker:latest .  
-docker build -t bestbuy-order-service:latest .  
-docker build -t bestbuy-store-admin:latest .  
-docker build -t bestbuy-virtual-customer:latest .
-## 
-Here is your content rephrased and formatted in Markdown:
-
-markdown
-Copy code
-### **Step 1: Build Docker Images for All Repositories**
-
-```bash
-docker build -t best-buy-ai-service:latest .  
-docker build -t best-buy-makeline-service:latest .  
-docker build -t best-buy-product-service:latest .  
-docker build -t best-buy-store-front:latest .  
-docker build -t best-buy-virtual-worker:latest .  
-docker build -t best-buy-order-service:latest .  
-docker build -t best-buy-store-admin:latest .  
-docker build -t best-buy-virtual-customer:latest .
-
-```
-
-```bash
-
-Step 2: Tag Docker Images
-docker tag best-buy-ai-service:latest daniyal1207/best-buy-ai-service:latest  
-docker tag best-buy-makeline-service:latest daniyal1207/best-buy-makeline-service:latest  
-docker tag best-buy-product-service:latest daniyal1207/best-buy-product-service:latest  
-docker tag best-buy-store-front:latest daniyal1207/best-buy-store-front:latest  
-docker tag best-buy-virtual-worker:latest daniyal1207/best-buy-virtual-worker:latest  
-docker tag best-buy-order-service:latest daniyal1207/best-buy-order-service:latest  
-docker tag best-buy-store-admin:latest daniyal1207/best-buy-store-admin:latest  
-docker tag best-buy-virtual-customer:latest daniyal1207/best-buy-virtual-customer:latest
-
-```
-```bash
-
-## Step 3: Push Docker Images to the Repository
-docker push daniyal1207/best-buy-ai-service:latest  
-docker push daniyal1207/best-buy-makeline-service:latest  
-docker push daniyal1207/best-buy-product-service:latest  
-docker push daniyal1207/best-buy-store-front:latest  
-docker push daniyal1207/best-buy-virtual-worker:latest  
-docker push daniyal1207/best-buy-order-service:latest  
-docker push daniyal1207/best-buy-store-admin:latest  
-docker push daniyal1207/best-buy-virtual-customer:latest  
-
-```
-
-
-| **Service**          | **Docker Image Link**      | 
-|----------------------|----------------------------|
-| **Store-Front**      | https://hub.docker.com/r/daniyal1207/best-buy-store-front/tags | 
-| **Order-Service**    |  https://hub.docker.com/r/daniyal1207/best-buy-order-service/tags| 
-| **Product-Service**  |  https://hub.docker.com/r/daniyal1207/best-buy-product-service/tags| 
-| **Makeline-Service** | https://hub.docker.com/r/daniyal1207/best-buy-makeline-service/tags |
-| **Store-admin**      | https://hub.docker.com/r/daniyal1207/best-buy-store-admin/tags | 
-| **AI-Service**       | https://hub.docker.com/r/daniyal1207/best-buy-ai-service/tags |
-| **Virtual-Customer** | https://hub.docker.com/r/daniyal1207/best-buy-virtual-customer/tags | 
-| **Virtual-Worker**   | https://hub.docker.com/r/daniyal1207/best-buy-virtual-worker/tags | 
-
 ---
 
 ## **Demo Video**
