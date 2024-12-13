@@ -180,23 +180,20 @@ The application comprises the following services:
 
 ## **Microservices and Docker Images**
 
-| **Service**          | **Repository Link**        | **Docker Image Link**             |
-|----------------------|----------------------------|-----------------------------------|
-| **Store-Front**      | [GitHub Link](github-link) | [Docker Hub Link](dockerhub-link) |
-| **Order-Service**    | [GitHub Link](github-link) | [Docker Hub Link](dockerhub-link) |
-| **Product-Service**  | [GitHub Link](github-link) | [Docker Hub Link](dockerhub-link) |
-| **Makeline-Service** | [GitHub Link](github-link) | [Docker Hub Link](dockerhub-link) |
-| **Store-admin**      | [GitHub Link](github-link) | [Docker Hub Link](dockerhub-link) |
-| **AI-Service**       | [GitHub Link](github-link) | [Docker Hub Link](dockerhub-link) |
-| **Virtual-Customer** | [GitHub Link](github-link) | [Docker Hub Link](dockerhub-link) |
-| **Virtual-Worker**   | [GitHub Link](github-link) | [Docker Hub Link](dockerhub-link) |
+| **Service**          | **Docker Image Link**      | 
+|----------------------|----------------------------|
+| **Store-Front**      | [GitHub Link](github-link) | 
+| **Order-Service**    | [GitHub Link](github-link) | 
+| **Product-Service**  | [GitHub Link](github-link) | 
+| **Makeline-Service** | [GitHub Link](github-link) |
+| **Store-admin**      | [GitHub Link](github-link) | 
+| **AI-Service**       | [GitHub Link](github-link) |
+| **Virtual-Customer** | [GitHub Link](github-link) | 
+| **Virtual-Worker**   | [GitHub Link](github-link) | 
 
 ---
 
 ## **Demo Video**
 
 - [Demo Video Link](youtube-link)
-  - Showcases Store-Front and Store-Admin functionalities.
-  - Demonstrates order processing and AI integration.
 
----
