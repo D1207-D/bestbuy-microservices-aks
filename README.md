@@ -1,6 +1,6 @@
-# BESTBUY
-Full Stack - Assignment 2
-# Assignment 2 
+
+#  Assignment 2
+
 # By Daniyal Shahid (041110791)
 # Best Buy Cloud-Native Application
 
