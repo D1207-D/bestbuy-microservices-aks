@@ -107,6 +107,9 @@ docker push daniyal1207/best-buy-virtual-customer:latest
 | **Virtual-Customer** | https://hub.docker.com/r/daniyal1207/best-buy-virtual-customer/tags | 
 | **Virtual-Worker**   | https://hub.docker.com/r/daniyal1207/best-buy-virtual-worker/tags | 
 
+
+![image](./screenshots/4.png)
+
 ---
 
 
@@ -143,6 +146,12 @@ docker push daniyal1207/best-buy-virtual-customer:latest
      ```bash
      kubectl get nodes
      ```
+![image](./screenshots/1.png)
+
+![image](./screenshots/2.png)
+
+
+
 
 ---
 
@@ -157,12 +166,18 @@ docker push daniyal1207/best-buy-virtual-customer:latest
    - Add GPT-4 and DALL-E 3 to the deployment.
    - Note the deployment names and endpoint URLs for later configuration.
 
+![image](./screenshots/6.png)
+
+![image](./screenshots/5.png)
+
+
 3. **Retrieve API Keys:**
    - Access the **Keys and Endpoints** section in the Azure portal and copy the API key.
    - Base64 encode the API key:
      ```bash
      echo -n "<your-api-key>" | base64
      ```
+
 
 4. **Update Configuration Files:**
    - Edit `secrets.yaml` and `aps-all-in-one.yaml` to include the encoded API key and endpoint details.
@@ -183,11 +198,21 @@ docker push daniyal1207/best-buy-virtual-customer:latest
      ```bash
      kubectl apply -f aps-all-in-one.yaml
      ```
+![image](./screenshots/3.png)
+
+ ![image](./screenshots/8.png)
+    
    - Validate the deployment:
      ```bash
      kubectl get pods
      kubectl get services
      ```
+     ![image](./screenshots/9.png)
+
+![image](./screenshots/7.png)
+
+![image](./screenshots/10.png)
+
 
 3. **Deploy Virtual Customer and Worker:**
    - Simulate order creation and processing:
