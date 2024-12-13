@@ -200,41 +200,41 @@ Copy code
 ### **Step 1: Build Docker Images for All Repositories**
 
 ```bash
-docker build -t bestbuy-ai-service:latest .  
-docker build -t bestbuy-makeline-service:latest .  
-docker build -t bestbuy-product-service:latest .  
-docker build -t bestbuy-store-front:latest .  
-docker build -t bestbuy-virtual-worker:latest .  
-docker build -t bestbuy-order-service:latest .  
-docker build -t bestbuy-store-admin:latest .  
-docker build -t bestbuy-virtual-customer:latest .
+docker build -t best-buy-ai-service:latest .  
+docker build -t best-buy-makeline-service:latest .  
+docker build -t best-buy-product-service:latest .  
+docker build -t best-buy-store-front:latest .  
+docker build -t best-buy-virtual-worker:latest .  
+docker build -t best-buy-order-service:latest .  
+docker build -t best-buy-store-admin:latest .  
+docker build -t best-buy-virtual-customer:latest .
 
 ```
 
 ```bash
 
 Step 2: Tag Docker Images
-docker tag bestbuy-ai-service:latest seerat19/bestbuy-ai-service:latest  
-docker tag bestbuy-makeline-service:latest seerat19/bestbuy-makeline-service:latest  
-docker tag bestbuy-product-service:latest seerat19/bestbuy-product-service:latest  
-docker tag bestbuy-store-front:latest seerat19/bestbuy-store-front:latest  
-docker tag bestbuy-virtual-worker:latest seerat19/bestbuy-virtual-worker:latest  
-docker tag bestbuy-order-service:latest seerat19/bestbuy-order-service:latest  
-docker tag bestbuy-store-admin:latest seerat19/bestbuy-store-admin:latest  
-docker tag bestbuy-virtual-customer:latest seerat19/bestbuy-virtual-customer:latest
+docker tag best-buy-ai-service:latest daniyal1207/best-buy-ai-service:latest  
+docker tag best-buy-makeline-service:latest daniyal1207/best-buy-makeline-service:latest  
+docker tag best-buy-product-service:latest daniyal1207/best-buy-product-service:latest  
+docker tag best-buy-store-front:latest daniyal1207/best-buy-store-front:latest  
+docker tag best-buy-virtual-worker:latest daniyal1207/best-buy-virtual-worker:latest  
+docker tag best-buy-order-service:latest daniyal1207/best-buy-order-service:latest  
+docker tag best-buy-store-admin:latest daniyal1207/best-buy-store-admin:latest  
+docker tag best-buy-virtual-customer:latest daniyal1207/best-buy-virtual-customer:latest
 
 ```
 ```bash
 
 ## Step 3: Push Docker Images to the Repository
-docker push seerat19/bestbuy-ai-service:latest  
-docker push seerat19/bestbuy-makeline-service:latest  
-docker push seerat19/bestbuy-product-service:latest  
-docker push seerat19/bestbuy-store-front:latest  
-docker push seerat19/bestbuy-virtual-worker:latest  
-docker push seerat19/bestbuy-order-service:latest  
-docker push seerat19/bestbuy-store-admin:latest  
-docker push seerat19/bestbuy-virtual-customer:latest  
+docker push daniyal1207/best-buy-ai-service:latest  
+docker push daniyal1207/best-buy-makeline-service:latest  
+docker push daniyal1207/best-buy-product-service:latest  
+docker push daniyal1207/best-buy-store-front:latest  
+docker push daniyal1207/best-buy-virtual-worker:latest  
+docker push daniyal1207/best-buy-order-service:latest  
+docker push daniyal1207/best-buy-store-admin:latest  
+docker push daniyal1207/best-buy-virtual-customer:latest  
 
 ```
 
